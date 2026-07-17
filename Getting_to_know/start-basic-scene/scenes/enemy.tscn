@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://b24f4rf5smcvd"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8tegq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8tegq"]
+albedo_color = Color(0.69159853, 0.4994759, 0.14625439, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_7p1mj"]
+material = SubResource("StandardMaterial3D_8tegq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7p1mj"]
+albedo_color = Color(0.24405202, 0.24405205, 0.24405202, 1)
+
+[node name="Enemy" type="CharacterBody3D" unique_id=2141847849]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1957698360]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_8tegq")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=128244520]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_7p1mj")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=1793198603]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.5053711, 1.4258484, 0)
+radius = 0.138
+height = 0.9892578
+material = SubResource("StandardMaterial3D_7p1mj")

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://d1bqstkc3ynpp" path="res://scenes/world.gd" id="1_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://dlabam645e6w4" path="res://scenes/player.tscn" id="2_4wyf3"]
+[ext_resource type="PackedScene" uid="uid://b24f4rf5smcvd" path="res://scenes/enemy.tscn" id="3_4wyf3"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_f3sb7"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -37,3 +38,6 @@ offset_right = 172.0
 offset_bottom = 74.0
 theme_override_font_sizes/font_size = 64
 text = "0/100"
+
+[node name="Enemy" parent="." unique_id=2141847849 instance=ExtResource("3_4wyf3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.664555, 0, 0)
